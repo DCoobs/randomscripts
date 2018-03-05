@@ -96,3 +96,9 @@ ElseIf (($rootMembers -eq $null) -and ($groupMembers -ne $null))
     Add-ADGroupMember -Identity $adGroup -Members $_ -Confirm:$false
     "Added $_"}
     }
+
+# If there is no net change to group membership, print output
+If (($usersToAdd -eq $null) -and ($usersToRemove -eq $null))
+    {
+    "No net change for user membership of $adGroup"
+    }
