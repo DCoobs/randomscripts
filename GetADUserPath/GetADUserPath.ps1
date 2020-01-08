@@ -2,7 +2,7 @@
 .SYNOPSIS
 Prints the location/path of an AD user object.
 .DESCRIPTION
-This script can be fed a comma-separated list of AD user identities and it wil Group, compares that to the list of members already in the root of the AD group, and adds/removes users to the base AD group as required.
+This script can be fed a comma-separated list of AD user identities and it will output their Acive Directory canonical name.
 Written by Drew Coobs - University of Illinois
 January 2020
 .PARAMETER netids
